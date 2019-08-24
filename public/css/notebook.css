@@ -1,0 +1,191 @@
+html{
+	min-height:100%;
+}
+
+.bmodel{
+	background: url(../images/notes.jpg) no-repeat center center fixed; 
+	background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+	height:100%;
+}
+.dmodel{
+	background: url(../images/desktop.jpg) no-repeat center center fixed; 
+	background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+	height:100%;
+}
+
+.nmodel{
+	background: url(../images/workspace.jpg) no-repeat center center fixed; 
+	background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+	height:100%;
+
+}
+
+.background{
+	height: 100%;
+	width:100%;
+	background: url(../images/workspaceblack.jpg) no-repeat center center fixed; 
+	background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.note{
+	width:60%;
+	margin 0 auto;
+}
+
+}
+.background{
+	background: green;
+
+}
+
+.ui.menu{
+	margin:0 auto;
+	position:fixed;
+	z-index:1;
+}
+
+a.item{
+	padding:0px;
+
+}
+
+div.ui.simple.dropdown.item{
+	padding: 0px;
+}
+
+div.header.item{
+	padding:0px;
+}
+
+.regform{
+	width: 50%;
+	margin:0 auto;
+}
+
+.signup{
+	text-align:center;
+}
+
+.welcome{
+	text-align:center;
+	color:white;
+	padding-top:45px;
+	padding-bottom:50px;
+}
+
+.buttonHolder{
+	text-align:center;
+}
+
+
+
+.list{
+	
+	line-height: 50px;
+	font-size: 2rem;
+	list-style: none;
+	background-color:#FFFFFF;
+	margin:0;
+	padding:0;
+	overflow-wrap: break-word;
+
+}
+
+.tablet{
+	width:35%;
+	margin: 0 auto;
+
+
+}
+.textedit{
+	width:100%;
+}
+
+.notetop{
+	background: url(../images/browntexture.jpg);
+	text-align:center;
+}
+
+.list li{
+	border-bottom: solid 2px black;
+}
+input{
+
+	padding:0;
+	border:none;
+}
+
+input:focus{
+	outline:none;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+span {
+	display:inline-block;
+	visibility: hidden;
+	width:0;
+}
+
+li:hover span{
+	width:40px;
+	display:;
+	visibility:visible;
+
+}
+
+.completed{
+	text-decoration:line-through;
+	color: gray;
+}
+
+#delete{
+	display:inline-block;
+}
+
+.maintime{
+	padding-top:30%;
+
+
+}
+
+#hour{
+	border: solid black 2px;
+	line-height: 40px;
+}
+
+#min{
+	border: solid black 2px;
+	line-height:40px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

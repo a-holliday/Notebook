@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+	<div vlass="ui huge header">New Note</div>
+	<form class="ui form" action="/notes" method="POST">
+		<div class "field">
+			<label>Title</label>
+			<input type="text" name="note[title]" placeholder="title">
+		</div>
+		<div>
+			<label>Content</label>
+			<textarea  name="note[text]" placeholder="content" required></textarea>
+		</div>
+		<div class="buttonHolder">
+		<input class="ui basic teal button" type="submit"> 
+		</div>
+	</form>
+</div>
+<% include ./partials/footer %>
+

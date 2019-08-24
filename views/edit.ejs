@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+	<div vlass="ui huge header">Edit <%= note.title %></div>
+	<form class="ui form" action="/note/<%=note._id%>/edit?_method=PUT" method="POST">
+		<div class "field">
+			<label>Title</label>
+			<input type="text" name="note[title]" value="<%=note.title%>">
+		</div>
+
+		<div class "field">
+			<label>Content</label>
+			<textarea  name="note[text]"><%=note.text%></textarea>
+		</div>
+		<input class="ui basic teal button" type="submit"> 
+		</form>
+</div>
+<% include ./partials/footer %>

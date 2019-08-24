@@ -1,0 +1,9 @@
+<% include ./partials/header %>
+<div class="background">
+	<h1><%=note.title %></h1>
+	<h4><%=note.date.toDateString() %></h4>
+	<p><%=note.text.substring(0,100) %></p> 
+	<a class="ui button blue basic" href="/note/<%=note._id%>/edit"> Edit this note </a>
+	<a class="ui button red basic" href="/note/<%=note._id%>/delete">Delete this note</a>
+	<a class="ui button green basic" href="/notes">Back to all notes</a>
+<% include ./partials/footer %>

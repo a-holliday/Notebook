@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<div class="background">
+<h1>Notes</h1>
+<a href="/notes/new">Make a new note</a>
+
+<% notes.forEach(function(note){ %>
+	<div class="ui piled segment note">
+	<h4><%=note.title %></h4>
+	<h4><%=note.date.toDateString() %></h4>
+	<p><%=note.text.substring(0,100) %></p> 
+	<a class="ui orange basic button" href="/note/<%=note._id%>/edit"> Edit this note </a>
+	<a class ="ui blue basic button" href="/note/<%=note._id%>">Details</a>
+	<form id="delete" action="/note/<%=note._id%>/delete?_method=DELETE" method="POST">
+		<button class="ui red basic button">Delete</button>
+		</form>
+	</div>
+<% }) %>
+
+
+
+
+
+
+<% include ./partials/footer %>
